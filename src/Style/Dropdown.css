@@ -1,0 +1,15 @@
+.dropdown-container {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dropdown-select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
