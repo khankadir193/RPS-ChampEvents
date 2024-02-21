@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Style/Header.css';
-import HeaderImg from '../assets/images/battle/header.png';
-import DatePicker from './DatePicker';
-import LanguagePicker from './DatePicker';
+import LanguageDropDown from './LanguageDropDown';
+// import { AppContext } from '../AppContext';
+import { AppContext } from "../AppContext"; // Import AppContext from the AppContext.js file
 
 const Header = () => {
+  const { selectedLng, changeLanguage } = useContext(AppContext); // Use useContext hook to consume the context
+
   return (
     <div className='header'>
-      <LanguagePicker />
+      <LanguageDropDown
+        selectedLanguage={selectedLng}
+        changeLanguage={changeLanguage}
+      />
     </div>
   )
 }
