@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import '../Style/Header.css';
+import '../Styles/dropDown.scss';
+import '../Styles/header.scss';
 import LanguageDropDown from './LanguageDropDown';
 // import { AppContext } from '../AppContext';
 import { AppContext } from "../AppContext"; // Import AppContext from the AppContext.js file
